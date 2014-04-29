@@ -6,7 +6,7 @@ public class Controls : MonoBehaviour {
 	public float SpeedY;
 	public bool grounded;
 	public bool facingRight;
-	public float LowPoint;
+	public float LowPoint = -175;
 	public Transform SpawnPoint;
 
 	public float RunSpeed = 100f;
@@ -30,7 +30,7 @@ public class Controls : MonoBehaviour {
 		Vector3 pos = transform.position;
 		Vector3 speed = new Vector3();
 
-		pos.z = 2.495101f;
+		//pos.z = 2.495101f;
 		transform.position = pos;
 
 		/*if (!grounded) {
