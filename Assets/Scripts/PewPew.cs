@@ -15,11 +15,13 @@ public class PewPew : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		SpawnPosition = GetComponent<Transform> ().position;
-		SpawnRotation = GetComponent<Transform> ().rotation;
+		//SpawnPosition = GetComponent<Transform> ().position;
+		//SpawnRotation = GetComponent<Transform> ().rotation;
 	}
 
 	void OnCollisionEnter(Collision col){
-		Destroy(gameObject);
+		Destroy(gameObject, 1f);
 	}
+
+
 }
