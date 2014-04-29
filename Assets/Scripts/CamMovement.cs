@@ -75,17 +75,15 @@ public class CamMovement : MonoBehaviour {
 
 		//gameObject.transform.position = gameObject.transform.position + delta;
 		//x = player.transform.position;
-		float curY = transform.position.y;
+
 
 		Vector3 v3 = player.position;
 		v3.z = transform.position.z;
+		v3.y = v3.y + 20;
 		if (Vector3.Distance(v3, player.position) > deadZone)
 			transform.position = Vector3.Lerp(transform.position, v3, speed * Time.deltaTime);
 
-		Vector3 curpos = gameObject.transform.position;
-		curpos.y = curY;
-		transform.position = curpos;
-		
+
 	}
 	
 

@@ -20,7 +20,7 @@ public class PewPew : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision col){
-		Destroy(gameObject, 1f);
+		Destroy(gameObject);
 	}
 
 

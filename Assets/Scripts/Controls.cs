@@ -6,11 +6,7 @@ public class Controls : MonoBehaviour {
 	public float SpeedY;
 	public bool grounded;
 	public bool facingRight;
-<<<<<<< HEAD
 	public float LowPoint = -300;
-=======
-	public float LowPoint;
->>>>>>> ec6df63f376cbe7b0b892a5a0c9ad6e26a47c2af
 	public Transform SpawnPoint;
 
 	public float RunSpeed = 100f;
