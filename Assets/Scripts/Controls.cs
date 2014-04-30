@@ -30,7 +30,7 @@ public class Controls : MonoBehaviour {
 		Vector3 pos = transform.position;
 		Vector3 speed = new Vector3();
 
-		pos.z = 2.495101f;
+		//pos.z = 2.495101f;
 		transform.position = pos;
 
 		/*if (!grounded) {
