@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Pistol : MonoBehaviour {
 	public GameObject laserPrefab;
+	public static float direction;
 	//public GameObject arm;
 	//public GameObject armAnchor;
 	//public Camera cam;
@@ -39,7 +40,9 @@ public class Pistol : MonoBehaviour {
 		//dir.Normalize();
 		//Quaternion aim = Quaternion.FromToRotation( -Vector3.forward, dir);
 
-		if ((Input.GetKeyDown (KeyCode.D) && !facingRight) ||
+		if ((Input.GetKeyDown (KeyCode.D) && !facingRight) 			||
+		    (Input.GetKeyDown (KeyCode.RightArrow) && !facingRight) ||
+		    (Input.GetKeyDown (KeyCode.LeftArrow) && facingRight)	||
 			(Input.GetKeyDown (KeyCode.A) && facingRight))
 			facingRight = !facingRight;
 
@@ -52,16 +55,17 @@ public class Pistol : MonoBehaviour {
 	}
 
 	void Fire () {
-		var direction = 1;
+		direction = 1f;
 		if (!facingRight)
-			direction = -1;
-		var thePosition = new Vector3 (this.transform.position.x + 4*direction, this.transform.position.y, this.transform.position.z);
+			direction = -1f;
+		var thePosition = new Vector3 (this.transform.position.x + 3.5f*direction, this.transform.position.y, this.transform.position.z);
 		var laser = GameObject.Instantiate(laserPrefab, thePosition, this.transform.rotation) as GameObject;
 		var newDirection = this.transform.rotation;
 		newDirection.x = newDirection.x * direction;
 
 		laser.rigidbody.AddForce(newDirection.x, 0, 0);
-		Destroy (laser, 5.0f);
+		laser.rigidbody.velocity = new Vector3(5.4f*direction,0,0);
+		Destroy (laser, 2.0f);
 		LaserSound();
 	}
 

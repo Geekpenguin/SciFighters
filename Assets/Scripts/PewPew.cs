@@ -6,11 +6,12 @@ public class PewPew : MonoBehaviour {
 	public static Light light;
 	public static Vector3 SpawnPosition;
 	public Quaternion SpawnRotation;
+	public float xForce;
 
 	// Use this for initialization
 	void Start () {
-		//sprite = GetComponent<Sprite>;
-		//light = GetComponent<Light>;
+		xForce = .05f * Pistol.direction;
+		constantForce.force = new Vector3(xForce, 0, 0);
 	}
 	
 	// Update is called once per frame
@@ -20,7 +21,8 @@ public class PewPew : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision col){
-		Destroy(gameObject);
+		if(!col.transform.name.Equals("laser(Clone)"))
+			Destroy(gameObject);
 	}
 
 
