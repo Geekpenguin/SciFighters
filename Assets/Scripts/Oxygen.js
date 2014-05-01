@@ -1,6 +1,6 @@
 ﻿#pragma strict
 
-var oxygen: float = 100; // set duration time in seconds in the Inspector
+public static var oxygen: float = 100; // set duration time in seconds in the Inspector
 
 function Update(){
 	oxygen -= Time.deltaTime;
