@@ -68,6 +68,7 @@
      <Compile Include="Assets\Mushroom Land\Standard Assets\Image Effects (Pro Only)\Vignetting.js" />
      <Compile Include="Assets\Scripts\FadeIn.js" />
      <Compile Include="Assets\Scripts\IMAGFadeIn.js" />
+     <Compile Include="Assets\Scripts\Oxygen.js" />
      <Compile Include="Assets\Scripts\PlayingSounds.js" />
      <Compile Include="Assets\Scripts\rotate.js" />
      <Compile Include="Assets\Tropical Plants\Scripts\WavingAnimation Script.js" />

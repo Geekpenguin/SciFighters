@@ -1,10 +1,22 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Models\BasicEnemy\EnemyCactus.js">
     <Files>
       <File FileName="Assets\Models\BasicEnemy\EnemyCactus.js" Line="1" Column="1" />
       <File FileName="Assets\Models\BasicEnemy\EnemyCactus.js" Line="55" Column="6" />
       <File FileName="Assets\Scripts\Controls.cs" Line="1" Column="1" />
+=======
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Oxygen.js">
+    <Files>
+      <File FileName="Assets\Scripts\Controls.cs" Line="15" Column="16" />
+      <File FileName="Assets\Scripts\Health.cs" Line="12" Column="53" />
+      <File FileName="Assets\Models\Captain\Pistol.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CamMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Controls.cs" Line="163" Column="2" />
+      <File FileName="Assets\Scripts\PewPew.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Oxygen.js" Line="11" Column="30" />
+>>>>>>> 3726fd62eff93792449ae039a50643d9f04d31a5
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
