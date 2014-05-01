@@ -51,6 +51,7 @@ public class Controls : MonoBehaviour {
 		anim.SetBool ("Grounded", grounded);
 
 		if (grounded && Input.GetButtonDown("Jump")) {
+			SpawnPoint.position = this.transform.position;
 			rigidbody.AddForce (Vector3.up * JumpForce);
 			//speed = rigidbody.velocity; 
 			//speed.y = 20;
