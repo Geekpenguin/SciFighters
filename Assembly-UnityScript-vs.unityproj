@@ -46,6 +46,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Detonator Explosion Framework\Sample Supporting Emitters\Detonator Spray Helper.js" />
+     <Compile Include="Assets\Detonator Explosion Framework\TestScene\DetonatorTest.js" />
      <Compile Include="Assets\Models\BasicEnemy\EnemyCactus.js" />
      <Compile Include="Assets\Mushroom Land\Standard Assets\Image Effects (Pro Only)\AntialiasingAsPostEffect.js" />
      <Compile Include="Assets\Mushroom Land\Standard Assets\Image Effects (Pro Only)\BloomAndLensFlares.js" />
@@ -69,6 +71,7 @@
      <Compile Include="Assets\Scripts\PlayingSounds.js" />
      <Compile Include="Assets\Scripts\rotate.js" />
      <Compile Include="Assets\Tropical Plants\Scripts\WavingAnimation Script.js" />
+     <Compile Include="Assets\enemyholder.js" />
      <None Include="Assets\Mushroom Land\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Mushroom Land\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
      <None Include="Assets\Mushroom Land\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
@@ -86,6 +89,7 @@
      <None Include="Assets\Mushroom Land\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAAPreset3.shader" />
      <None Include="Assets\Mushroom Land\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\FisheyeShader.shader" />
      <None Include="Assets\Mushroom Land\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Apply.shader" />
+     <None Include="Assets\Detonator Explosion Framework\Resources\Detonator\Textures\HeatDistort.shader" />
      <None Include="Assets\Tropical Plants\Shaders\AO-bumped-Diffuse.shader" />
      <None Include="Assets\Mushroom Land\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfField34.shader" />
      <None Include="Assets\Mushroom Land\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\TiltShift.shader" />
