@@ -58,7 +58,7 @@ public class Pistol : MonoBehaviour {
 		direction = 1f;
 		if (!facingRight)
 			direction = -1f;
-		var thePosition = new Vector3 (this.transform.position.x + 3.5f*direction, this.transform.position.y, this.transform.position.z);
+		var thePosition = new Vector3 (this.transform.position.x + 5f*direction, this.transform.position.y, this.transform.position.z);
 		var laser = GameObject.Instantiate(laserPrefab, thePosition, this.transform.rotation) as GameObject;
 		var newDirection = this.transform.rotation;
 		newDirection.x = newDirection.x * direction;
