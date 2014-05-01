@@ -92,6 +92,7 @@ public class Controls : MonoBehaviour {
 	}
 	
 	void Respawn () {
+		Score.score -= 100;
 		transform.position = SpawnPoint.position;
 	}
 	
