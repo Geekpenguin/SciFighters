@@ -26,7 +26,7 @@ public class Controls : MonoBehaviour {
 	
 	void OnCollisionEnter(Collision col){
 		if(col.transform.name.Equals("Enemy")) {
-			health = health - 10;
+			health = health - 2;
 			Instantiate(Resources.Load("Explosion"), transform.position, transform.rotation);
 			rigidbody.AddForce (Vector3.up * JumpForce * 2);
 			//rigidbody.AddForce(Vector3.back * 1000, 0);
