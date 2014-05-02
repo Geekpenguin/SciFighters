@@ -7,6 +7,8 @@ public class PewPew : MonoBehaviour {
 	public static Vector3 SpawnPosition;
 	public Quaternion SpawnRotation;
 	public float xForce;
+	public GameObject bubble1;
+	public int FUCK;
 
 	// Use this for initialization
 	void Start () {
@@ -21,8 +23,8 @@ public class PewPew : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision col){
-		GameObject bubble1 = Instantiate(object) as GameObject;
-		Instantiate(Resources.Load("EnemyHolder3"), transform.position, transform.rotation);
+		if(col.transform.name.Equals("EnemyWood"))
+			Instantiate(bubble1, transform.position, transform.rotation);
 		if(!col.transform.name.Equals("laser(Clone)"))
 			Destroy(gameObject);
 	}
