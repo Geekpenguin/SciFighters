@@ -15,6 +15,7 @@ var health = 100;
 var curY;
 var curDist;
 var Player1 : GameObject;
+var wakeState = 0;
 
 function OnCollisionEnter(col : Collision){
 		if(col.transform.name.Equals("laser(Clone)")) {
@@ -48,6 +49,10 @@ function Update () {
     }
    else if(Vector3.Distance(transform.position,Player.position) >= MinDist){
    		animation.Play("EnemyWalk3");
+   		if (wakeState == 0){
+   			wakeState = 1;
+   			audio.Play();
+   		}
    		transform.position = Vector3.MoveTowards(transform.position, Player.position, step);
         //transform.position.x += Player.transform.position.x*MoveSpeed*Time.deltaTime;  
         //gameObject.transform.rotation.y=266;     

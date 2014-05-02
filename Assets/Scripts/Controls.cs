@@ -28,7 +28,7 @@ public class Controls : MonoBehaviour {
 		if(col.transform.name.Equals("Enemy")) {
 			health = health - 2;
 			Instantiate(Resources.Load("Explosion"), transform.position, transform.rotation);
-			rigidbody.AddForce (Vector3.up * JumpForce * 2);
+			rigidbody.AddForce (Vector3.up * JumpForce);
 			//rigidbody.AddForce(Vector3.back * 1000, 0);
 			//transform.position = Vector3.MoveTowards(transform.position, transform.position * Vector3.back * 10, step);
 		}
