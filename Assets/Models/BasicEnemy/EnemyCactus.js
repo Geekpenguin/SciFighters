@@ -16,6 +16,7 @@ var curY;
 var curDist;
 var Player1 : GameObject;
 var wakeState = 0;
+var wooden = 0;
 
 function OnCollisionEnter(col : Collision){
 		if(col.transform.name.Equals("laser(Clone)")) {

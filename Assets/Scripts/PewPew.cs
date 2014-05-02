@@ -21,6 +21,8 @@ public class PewPew : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision col){
+		GameObject bubble1 = Instantiate(object) as GameObject;
+		Instantiate(Resources.Load("EnemyHolder3"), transform.position, transform.rotation);
 		if(!col.transform.name.Equals("laser(Clone)"))
 			Destroy(gameObject);
 	}
