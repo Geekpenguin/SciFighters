@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Score : MonoBehaviour {	
 	public static int score;
+	public int health;
 
 	// Use this for initialization
 	void Start () {
@@ -12,6 +13,7 @@ public class Score : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		guiText.text = "Score: " + score;
+		health = Controls.health * 10;
+		guiText.text = "Score: " + (score + health);
 	}
 }
